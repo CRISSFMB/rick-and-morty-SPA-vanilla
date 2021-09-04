@@ -3,9 +3,9 @@
 const HomeAllCharacthersScreen = () => {
     const view = `
 
-        <div class="Characthers">
+        <div class="characthers">
 
-            <article class="Character-item">
+            <article class="character-item">
                <a href="#/1/">
                     <img src="image" alt="name"/>
                     <h2>Name</h2>

@@ -1,6 +1,6 @@
 const Error404Screen = () => {
     view `
-        <div class="Error404">
+        <div class="error404">
         <h2>Error 404</h2>
         </div>
     `;

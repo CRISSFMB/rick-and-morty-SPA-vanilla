@@ -1,11 +1,11 @@
 const CharacterScreen = () => {
     view = `
-        <div class="Characters-inner">
-        <article class="Characters-card">
+        <div class="characters-inner">
+        <article class="characters-card">
             <img src="image" alt="name">
             <h2>Name</h2>
         </article>
-        <article class="Characters-card">
+        <article class="characters-card">
             <h3>Episodes:</h3>
             <h3>Status:</h3>
             <h3>Species:</h3>
