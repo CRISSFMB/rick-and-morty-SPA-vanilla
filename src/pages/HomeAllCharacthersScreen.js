@@ -1,6 +1,6 @@
 // create template
 
-const HomeScreen = () => {
+const HomeAllCharacthersScreen = () => {
     const view = `
 
         <div class="Characthers">
@@ -19,4 +19,4 @@ const HomeScreen = () => {
     return view;
 };
 
-export default Home;
+export default HomeCharacthersScreen;
