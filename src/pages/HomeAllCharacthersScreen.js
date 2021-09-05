@@ -1,22 +1,27 @@
-// create template
+import getData from "../utils/getData";
 
-const HomeAllCharacthersScreen = () => {
-    const view = `
+const HomeAllCharacthersScreen = async () => {
+  const { results } = await getData();
 
+  const view = `
         <div class="characthers">
 
+          ${results
+            .map((characther) => {
+              const { name, image, id } = characther;
+              return `
             <article class="character-item">
-               <a href="#/1/">
-                    <img src="image" alt="name"/>
-                    <h2>Name</h2>
-               </a> 
-            </article>
-        
-        </div>
-    
-    `;
+                  <a href="#/${id}/">
+                  <img src="${image}" alt="${name}">
+                  <h2>${name}</h2>
+                  </a>
+            </article>`;
+            })
+            .join("")}
 
-    return view;
+        </div>`;
+
+  return view;
 };
 
-export default HomeCharacthersScreen;
+export default HomeAllCharacthersScreen;
